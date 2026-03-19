@@ -13,3 +13,4 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 # Donation Settings
 SUPPORT_URL = "https://example.com"
 DONATION_CHANCE = 1  # 7% chance to show donation nudge
+PAYMENT_PROVIDER_TOKEN = os.getenv("PAYMENT_PROVIDER_TOKEN", "YOUR_PAYMENT_PROVIDER_TOKEN_HERE")

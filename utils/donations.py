@@ -1,6 +1,6 @@
 import random
 from aiogram.utils.keyboard import InlineKeyboardBuilder
-from config import DONATION_CHANCE, SUPPORT_URL
+from config import DONATION_CHANCE
 from locales import LOCALES
 
 def add_donation_logic(text: str, keyboard_builder: InlineKeyboardBuilder, lang: str = "ru"):
@@ -14,7 +14,7 @@ def add_donation_logic(text: str, keyboard_builder: InlineKeyboardBuilder, lang:
         new_text = text + locale["donation_nudge"]
         
         # Add donation button
-        keyboard_builder.button(text=locale["btn_support"], url=SUPPORT_URL)
+        keyboard_builder.button(text=locale["btn_support"], callback_data="start_payment")
         
         return new_text, keyboard_builder
     
