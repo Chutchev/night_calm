@@ -1,0 +1,30 @@
+# Python-related exclusions
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints
+.venv/
+env/
+venv/
+ENV/
+.env
+
+# Git-related exclusions
+.git/
+.gitignore
+
+# IDE-related exclusions
+.idea/
+.vscode/
+
+# Project-specific exclusions
+.agent/
+.gemini/
+.antigravity/
+logs/
+data/
+
+# Docker-related exclusions
+Dockerfile
+docker-compose.yml
+.dockerignore

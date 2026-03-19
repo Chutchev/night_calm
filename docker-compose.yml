@@ -1,0 +1,10 @@
+services:
+  night_calm_bot:
+    image: your-username/night-calm:latest  # Replace your-username with your Docker Hub username
+    restart: always                         # Automatically restart if it crashes or the Pi reboots
+    env_file:                               # Take environment variables from .env
+      - .env
+    environment:                            # You can also set variables here
+      - BOT_TOKEN=${BOT_TOKEN}
+    # For ARM64 compatibility, Docker Hub will provide the right image automatically
+    # if you build with buildx.
