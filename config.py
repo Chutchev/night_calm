@@ -1,0 +1,15 @@
+"""
+Configuration module for handling environment variables and bot settings.
+"""
+import os
+from dotenv import load_dotenv
+
+# Load variables from .env file
+load_dotenv()
+
+# Telegram Bot Token from environment or fallback placeholder
+BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
+
+# Donation Settings
+SUPPORT_URL = "https://example.com"
+DONATION_CHANCE = 1  # 7% chance to show donation nudge
